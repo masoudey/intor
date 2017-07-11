@@ -1,0 +1,14 @@
+{
+  "name": "intor",
+  "version": "1.0.0",
+  "description": "Whatever you Need for Learning,Progress and Success",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Masoud",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
