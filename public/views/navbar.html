@@ -1,0 +1,29 @@
+    <nav class="navbar-inner">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <a class="navbar-brand" href="home">WebQuery</a>
+
+                <div class="collapse navbar-collapse" role="navigation">
+                    <div class="nav-button">
+                        <div class="hamburger">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div id="menu-click-area"></div>
+                    </div>
+                    <ul id="menu-items" class="nav navbar-nav">
+                        <li class="" ng-repeat="node in nav.menu"><a ui-sref="{{node.state}}" class="menu-item" roll="" needsclick=""><span data-hover="{{node.text}}">{{node.text}}</span></a></li>
+                        
+                        
+                    </ul>   
+                </div>
+
+    </nav>

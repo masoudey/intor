@@ -1,0 +1,25 @@
+{
+  "name": "intor",
+  "description": "Whatever you Need for Learning,Progress and Success",
+  "main": "main.html",
+  "authors": [
+    "Masoud"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/masoudey/intor",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.5",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^1.0.5",
+    "underscore": "^1.8.3",
+    "angular-ui-swiper": "^2.3.6"
+  }
+}
