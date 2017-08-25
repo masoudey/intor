@@ -58,7 +58,7 @@ $(function (){
             $('#back-to-top').fadeOut();
             $('.main-menu').removeClass('main-menu-shrink');
         }
-        if ($(this).scrollTop() >= 1 && !isRevealed) {
+        if ($(this).scrollTop() > 1 ) {
             $('.scrollanim').addClass('modify');
             isRevealed = true;
         } else{

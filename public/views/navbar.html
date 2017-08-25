@@ -8,7 +8,7 @@
                 </button>
 
 
-                <a class="navbar-brand" href="home">WebQuery</a>
+                <!-- <a class="navbar-brand" ui-sref="/">WebQuery</a> -->
 
                 <div class="collapse navbar-collapse" role="navigation">
                     <div class="nav-button">
@@ -23,7 +23,23 @@
                         <li class="" ng-repeat="node in nav.menu"><a ui-sref="{{node.state}}" class="menu-item" roll="" needsclick=""><span data-hover="{{node.text}}">{{node.text}}</span></a></li>
                         
                         
-                    </ul>   
+                    </ul>  
+                    <div class="utilities"> 
+                        <ul class="utilities-list">
+                            <li class="login-btn">
+                                <a href="/login">
+                                    <i class="icon-user2"></i>
+                                    Login
+                                </a>
+                            </li>
+                            <li class="search-btn">
+                                <form class="srchform " ng-class="{'open' : expandSearch}" ng-submit="">
+                                  <input type="text" class="srchtxt" ng-model="searchTxt"/>
+                                  <div class="eks" ng-click="expandSearch=!expandSearch"></div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
+                
     </nav>

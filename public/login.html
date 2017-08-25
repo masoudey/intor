@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>login</title>
+    <link href="/src/css/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/css/login.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <div class="container">
+	<div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-6">
+        		<div class="login">
+        			<div class="logo ir"></div>
+                    <span class="title">Login</span>
+        			<form method="POST" action="/login">
+                        <fieldset>
+                          
+                            <div class="inputrow">
+                                <i class="fa fa-user fa-fw"></i>
+                                <input type="text" name="username" id="user" placeholder="Username" value="" autofocus required />
+
+                            </div>
+                            <div class="inputrow">
+                                <i class="fa fa-key fa-fw"></i>
+                                <input type="password" name="password" id="password" value="" data-typetoggle="#show" 	placeholder="Password" required>
+                            </div>
+
+                            <div class="remember">
+                                <input type="checkbox" name="remember_login" value="1" id="remember_login"/>
+                                <label for="remember_login" class="radio">Remember me</label>
+
+                            </div>
+                            <div class="button-center">
+                                <button class="btn-light" type="submit" id="submit" >Login</button>
+                            </div>
+                        </fieldset>
+        		</form>
+        	</div>
+        </div>
+        <div class="col-sm-6">
+                <div class="login">
+                    <div class="logo ir"></div>
+                    <span class="title">Sign Up</span>
+                    <form method="POST" action="/Register">
+                        <fieldset>
+                          
+                            <div class="inputrow">
+                                <i class="fa fa-user fa-fw"></i>
+                                <input type="text" name="username" id="user" placeholder="Username" value="" autofocus required />
+
+                            </div>
+                            <div class="inputrow">
+                                <i class="fa fa-key fa-fw"></i>
+                                <input type="password" name="password" id="password" value="" data-typetoggle="#show"   placeholder="Password" required>
+                            </div>
+
+                            
+                            <div class="button-center">
+                                <button class="btn-light" type="submit" id="submit" >Sign Up</button>
+                            </div>
+                        </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+
+</body>
+
+</html>

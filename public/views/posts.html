@@ -1,72 +1,38 @@
 <div id="blog" class="blog intro-effect-jam3 scrollanim">
-            <section id="header-block" class="header ">
-            <div class=" wedget-post"><div class="bg-img">
-            <img src="/imgs/blog.jpg" alt="Background Image">
+    <section id="header-block" class="header ">
+        <div class=" wedget-post">
+            <div class="bg-img">
+                <img src="/imgs/blog.jpg" alt="Background Image">
+            </div>
+            <div class="title">
+                <h1>Posts</h1>
+            </div>
+            <button class="trigger"><span class="icon-arrow-down4"></span></button>
+        </div> 
+    </section>
+    <section id="posts-block" class="posts content  blog-thumb">
+        <div class="container">
+            <div class="row">
+                <input type="text" name="" ng-model="query">
+                <ul id="grid" class="grid effect-5" >
+                    <li ng-repeat="post in posts | filter: query" class="shown" >
+                        <div class=" grid-post">
+                            <figure class="effect-phoebe phoebe">
+                                <img src="/imgs/{{post['img'][0]}}" alt="img03">
+                                <figcaption class="phoebe">
+                                    <h2>{{post['title'][0]| labelCase}}</h2>
+                                    <p class="desc">{{post['desc'][0] | labelCase}}</p>
+                                    <p>
+                                        <a href="#"><i class="icon-user"></i></a>
+                                        <a href="#"><i class="icon-heart"></i></a>
+                                        <a ui-sref="postDetail({postId: {{post.id}}})"><i class="icon-link"></i></a>
+                                    </p>
+                                </figcaption>           
+                            </figure>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="title">
-
-            <h1>Posts</h1>
-        </div>
-        <button class="trigger"><span class="icon-arrow-down4"></span></button>
- </div> </section>
-            <section id="posts-block" class="posts content demo-2 blog-thumb">
- <div class="container"><div class="row">
- <ul id="grid" class="grid ">
- <li>
-            <div class=" grid-post"><div class="thumbhover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-    <figure class="blogthumb">
-        <img src="/images/5.jpg">
-        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"></path><desc>Created with Snap</desc><defs></defs></svg>
-        <figcaption class="blogthumb">
-            <h2>post1</h2>
-            <p>Responsive Responsive Responsive Responsive Responsive .</p>
-            <a href="/blog/post1">Details</a>
-        </figcaption>
-    </figure>
-</div>
- </div>
- </li>
- <li>
-            <div class="   grid-post"><div class="thumbhover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-    <figure class="blogthumb">
-        <img src="/images/1111.jpg">
-        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"></path><desc>Created with Snap</desc><defs></defs></svg>
-        <figcaption class="blogthumb">
-            <h2>post2</h2>
-            <p>masoud gjghjResponsive Responsive Responsive Responsive .</p>
-            <a href="/blog/post2">Details</a>
-        </figcaption>
-    </figure>
-</div>
- </div>
- </li>
- <li>
-            <div class="   grid-post"><div class="thumbhover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-    <figure class="blogthumb">
-        <img src="/images/uploaded/SCSS.jpg">
-        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"></path><desc>Created with Snap</desc><defs></defs></svg>
-        <figcaption class="blogthumb">
-            <h2>Using scss</h2>
-            <p>Sass is an extension of CSS that adds power and elegance to the basic language. </p>
-            <a href="/blog/using-scss">Details</a>
-        </figcaption>
-    </figure>
-</div>
- </div>
- </li>
- <li>
-            <div class="   grid-post"><div class="thumbhover" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
-    <figure class="blogthumb">
-        <img src="/images/uploaded/requirejs.png">
-        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"></path><desc>Created with Snap</desc><defs></defs></svg>
-        <figcaption class="blogthumb">
-            <h2>Require Js</h2>
-            <p>RequireJS is a JavaScript file and module loader. </p>
-            <a href="/blog/require-js">Details</a>
-        </figcaption>
-    </figure>
-</div>
- </div>
- </li></ul></div> </div></section>
-
+    </section>
 </div>
